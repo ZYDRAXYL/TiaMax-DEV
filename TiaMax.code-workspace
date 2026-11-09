@@ -1,0 +1,98 @@
+{
+	"folders": [
+		{
+			"name": "DEV",
+			"path": "."
+		},
+		{
+			"name": "APP",
+			"path": "./TiaMax-APP"
+		},
+		{
+			"name": "SDB",
+			"path": "./TiaMax-SDB"
+		},
+		{
+			"name": "TRX",
+			"path": "./TiaMax-TRX"
+		},
+		{
+			"name": "EXE",
+			"path": "./TiaMax-EXE"
+		},
+		{
+			"name": "PWA",
+			"path": "./TiaMax-PWA"
+		},
+		{
+			"name": "PKG",
+			"path": "./TiaMax-PKG"
+		},
+		{
+			"name": "WEB",
+			"path": "./TiaMax-WEB"
+		},
+		{
+			"name": "DOCS",
+			"path": "./TiaMax-DOCS"
+		},
+		{
+			"name": "PLATFORM",
+			"path": "./TiaMax-PLATFORM"
+		},
+		{
+			"name": "LANG",
+			"path": "./TiaMax-LANG"
+		},
+		{
+			"name": "FRAMEWORK",
+			"path": "./TiaMax-FRAMEWORK"
+		},
+		{
+			"name": "ENGINE",
+			"path": "./TiaMax-ENGINE"
+		},
+		{
+			"name": "TOOLS",
+			"path": "./TiaMax-TOOLS"
+		},
+		{
+			"name": "TOOLCHAIN",
+			"path": "./TiaMax-TOOLCHAIN"
+		}
+	],
+	"settings": {
+		"files.exclude": {
+			"TiaMax-APP": true,
+			"TiaMax-SDB": true,
+			"TiaMax-TRX": true,
+			"TiaMax-EXE": true,
+			"TiaMax-PWA": true,
+			"TiaMax-PKG": true,
+			"TiaMax-WEB": true,
+			"TiaMax-DOCS": true,
+			"TiaMax-PLATFORM": true,
+			"TiaMax-LANG": true,
+			"TiaMax-FRAMEWORK": true,
+			"TiaMax-ENGINE": true,
+			"TiaMax-TOOLS": true,
+			"TiaMax-TOOLCHAIN": true
+		}
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "Setup: Clone & Install All Repos",
+				"type": "shell",
+				"command": "pwsh",
+				"args": [
+					"-NoProfile",
+					"-File",
+					"${workspaceFolder:DEV}/scripts/setup.ps1"
+				],
+				"problemMatcher": []
+			}
+		]
+	}
+}

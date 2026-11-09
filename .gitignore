@@ -1,0 +1,15 @@
+TiaMax-APP/
+TiaMax-SDB/
+TiaMax-TRX/
+TiaMax-EXE/
+TiaMax-PWA/
+TiaMax-PKG/
+TiaMax-WEB/
+TiaMax-DOCS/
+TiaMax-PLATFORM/
+TiaMax-LANG/
+TiaMax-FRAMEWORK/
+TiaMax-ENGINE/
+TiaMax-TOOLS/
+TiaMax-TOOLCHAIN/
+node_modules/
